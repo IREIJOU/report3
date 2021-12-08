@@ -52,12 +52,27 @@ public class Hero {
             System.out.printf("勇者%sは道半ばで力尽きてしまった。\n", name);
         }
     }
+
+    /**
+     * ヒーローの名前を返すゲッターメソッド。
+     * @return ヒーローの名前
+     */
     public String getName(){
         return name;
     }
+
+    /**
+     * ヒーローが死んだかを返すゲッターメソッド。
+     * @return ヒーローが死んだか
+     */
     public boolean getDead(){
         return dead;
     }
+
+    /**
+     * ヒーローのHPを返すゲッターメソッド。
+     * @return ヒーローのHP
+     */
     public int getHitPoint(){
         return hitPoint;
     }

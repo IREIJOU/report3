@@ -54,9 +54,19 @@ public class Enemy {
             System.out.printf("モンスター%sは倒れた。\n", name);
         }
     }
+
+    /**
+     * 敵の名前を返すゲッターメソッド。
+     * @return
+     */
     public String getName(){
         return name;
     }
+
+    /**
+     * 敵が死んだかを返すゲッターメソッド
+     * @return 敵が死んだか
+     */
     public boolean getDead(){
         return dead;
     }
