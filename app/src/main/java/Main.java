@@ -6,8 +6,8 @@ public class Main {
         Enemy enemy = new Enemy("スライム", 6, 3);
         String hero_name = hero.getName();
         String enemy_name = enemy.getName();
-        boolean hero_dead = hero.getDead();
-        boolean enemy_dead = enemy.getDead();
+        boolean hero_dead = hero.isDead();
+        boolean enemy_dead = enemy.isDead();
 
         System.out.printf("%s vs. %s\n", hero_name, enemy_name);
 
@@ -17,8 +17,8 @@ public class Main {
             System.out.printf("%dターン目開始！\n", turn);
             hero.attack(enemy);
             enemy.attack(hero);
-            hero_dead = hero.getDead();
-            enemy_dead = enemy.getDead();
+            hero_dead = hero.isDead();
+            enemy_dead = enemy.isDead();
         }
         System.out.println("戦闘終了");
     }
