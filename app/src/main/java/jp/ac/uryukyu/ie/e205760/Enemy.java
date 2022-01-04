@@ -34,10 +34,10 @@ public class Enemy {
      * @param hero 攻撃対象
      */
     public void attack(Hero hero){
-        int damage = (int)(Math.random() * attack);
-        String h_name = hero.getName();
-        System.out.printf("%sの攻撃！%sに%dのダメージを与えた！！\n", name, h_name, damage);
         if(!(dead)){
+            int damage = (int)(Math.random() * attack);
+            String h_name = hero.getName();
+            System.out.printf("%sの攻撃！%sに%dのダメージを与えた！！\n", name, h_name, damage);
             hero.wounded(damage);
         }
     }
@@ -57,7 +57,7 @@ public class Enemy {
 
     /**
      * 敵の名前を返すゲッターメソッド。
-     * @return
+     * @return 敵の名前
      */
     public String getName(){
         return name;
