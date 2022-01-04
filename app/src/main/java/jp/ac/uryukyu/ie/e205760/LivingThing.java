@@ -35,6 +35,9 @@ public class LivingThing {
     public void setHitPoint(int hitPoint){
         this.hitPoint = hitPoint;
     }
+    public int getAttack(){
+        return this.attack;
+    }
 
 
     /**
