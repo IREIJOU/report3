@@ -17,6 +17,8 @@ public class Main {
             System.out.printf("%dターン目開始！\n", turn);
             hero.attack(enemy);
             enemy.attack(hero);
+            hero_dead = hero.getDead();
+            enemy_dead = enemy.getDead();
         }
         System.out.println("戦闘終了");
     }
